@@ -1,0 +1,177 @@
+.videoimage>video{
+  position: relative;
+  width:260px;
+  height:145px;
+}
+
+.pageimage img{
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  float:left;
+  margin:10px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+}
+
+.pagename, .views{
+  color:#606060
+}
+
+.video{
+  margin:5px;
+  background-color: #fafafa;
+}
+
+.category{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.playlists{
+  margin-left: 15.625em;
+  margin-top: 60px;
+  padding-left: 0.1em;
+  width:80%;
+  z-index: 3;
+}
+#navbar {
+  position: fixed;
+  min-width: 13.75rem;
+  top: 60px;
+  left: -20px;
+  width: 13.75rem;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  font-size: 16px;
+}
+
+#header{
+  width: 100%;
+  position: fixed;
+  margin-top: -60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+hr{
+  border-width:2px;
+  opacity:0.6;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  list-style-type: none;
+  padding: 5px;
+}
+
+li:hover, li a:hover {
+  background-color: #fafafa;
+  color: red;
+}
+
+.title,.pagename,.views{
+  padding-top: 5px; 
+}
+
+#logo i{
+  color: red;
+}
+
+#header i:hover{
+  color: red;
+}
+
+small{
+  display: none;
+}
+
+input{
+  width:20em;
+}
+
+input,button{
+  float: left;
+  margin-top: 10px;
+  font-size: 18px;
+  height: 2em;
+}
+
+button{
+  font-size: 21px;
+}
+
+#righticons,#logo{
+  margin-top: 15px;
+}
+
+#logo{
+  padding-left:1.250em;
+  font-size: 1.125rem;
+}
+
+#righticons{
+  padding-right:20px; 
+}
+
+
+#righticons i{
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+
+#righticons .hide{
+  display: none;
+}
+
+
+/*For mobile and tab screens*/
+@media only screen and (max-width: 800px) {
+  #navbar a{
+    display: none;
+    min-width: 1rem;
+     
+  }
+  #navbar{
+    border-style:none;
+  }
+  .playlists{
+    margin-left: 4em;
+  }
+  input{
+    display: none;
+  }
+  button{
+    display: none;
+  }
+  #righticons .hide{
+  display: inline-block;
+  }
+  #righticons .show{
+    display: none;
+  }
+  #navbar .hide{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+
+  small{
+    display: block;
+    font-size: 10px;
+  }
+
+}
+
